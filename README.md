@@ -14,7 +14,7 @@ CI enables teams to catch **errors and conflicts early**, **reducing the risk of
 
 
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
