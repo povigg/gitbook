@@ -31,3 +31,10 @@ Sync directories: first location is on your local device, second on linux device
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+### Website setup with html template
+
+* install services such as httpd, wget, unzip
+* /var/www/html/index.html - file to replace  default httpd website
+* download website template and unzip it ([https://www.tooplate.com](https://www.tooplate.com) for templates)
+* copy all od the content to replace default html: cp -r \* /var/www/html/
+* systemctl restart httpd
