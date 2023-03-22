@@ -29,7 +29,7 @@ Sync directories: first location is on your local device, second on linux device
 
 `config.vm.synced_folder "D:\shells_scripts", "/vagrant_data"`
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Website setup with html template
 
@@ -42,7 +42,7 @@ Sync directories: first location is on your local device, second on linux device
 
 or the same using vagrant file:
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Wordpress install Ubuntu
 
