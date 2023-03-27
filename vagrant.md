@@ -9,6 +9,7 @@ Vagrant images: [https://app.vagrantup.com/boxes/search](https://app.vagrantup.c
 * vagrant halt - stop vm
 * vagrant ssh - ssh to vm
 * vagrant destroy - delete vm
+* vagrant status - status of vms
 
 ## Vagrant File
 
