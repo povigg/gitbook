@@ -44,3 +44,22 @@ Jenkins
 Value of 2
 AWS
 ```
+
+&#x20;**Special Variables**
+
+• $0 - Name of current program (script)
+
+• $1, $2.. - Parameter 1, 2 and so on..
+
+• $# - Number of parameters given to script&#x20;
+
+• $@ - List of parameters given to script  &#x20;
+
+• $? - Exit value of last command run
+
+• \$$ - Process ID of the current script
+
+• $USER - The username of the user running script
+
+• $HOSTNAME - hostname of the machine running script
+
