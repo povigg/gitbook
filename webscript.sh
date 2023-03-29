@@ -1,10 +1,11 @@
 #!/bin/bash
 
 # Installing Dependecies
+#Forward output to /dev/null to not show it on the screen
 echo "###############################"
 echo "Installing packages"
 echo "###############################"
-sudo yum install wget unzip httpd -y
+sudo yum install wget unzip httpd -y > /dev/null
 echo
 
 # Starting & Enabling services
@@ -22,8 +23,8 @@ echo "Starting web deployment"
 mkdir -p /tmp/webfiles
 cd /tmp/webfiles
 
-wget https://www.tooplate.com/zip-templates/2109_the_card.zip
-unzip 2109_the_card.zip
+wget https://www.tooplate.com/zip-templates/2109_the_card.zip > /dev/null
+unzip 2109_the_card.zip >/dev/null
 cp -r 2109_the_card/* /var/www/html/
 echo
 
@@ -37,3 +38,10 @@ echo
 # cleanup
 echo "###############################"
 echo "Removing tmp files"
+echo
+
+# service status
+echo "###############################"
+echo "HTTPD status:"
+sudo systemctl status httpd
+echo "###############################"
