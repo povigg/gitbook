@@ -73,3 +73,21 @@ AWS
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+### Command substitution
+
+* Takes output of the command and saves it into variable
+* Achieved using \`\` or $(_cmd_)
+
+```
+[root@scriptbox ~]# UP=`uptime`
+[root@scriptbox ~]# echo $UP
+09:41:47 up 4 min, 1 user, load average: 0.01, 0.06, 0.04
+[root@scriptbox ~]#
+
+```
+
+```
+[root@scriptbox ~]# CURRENT_USER=$(who)
+[root@scriptbox ~]# echo $CURRENT_USER
+vagrant pts/0 2023-03-30 09:37 (10.0.2.2)
+```
