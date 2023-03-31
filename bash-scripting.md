@@ -91,3 +91,14 @@ AWS
 [root@scriptbox ~]# echo $CURRENT_USER
 vagrant pts/0 2023-03-30 09:37 (10.0.2.2)
 ```
+
+### Exporting Variables
+
+* Exporting variable will make it available for all shells
+* export _VARIABLE_ (this will be gone after logout from shell)
+
+To make variable permament:
+
+* For user: edit .bashrc file under user home direcoty
+* For everyone: edit file /etc/profile
+* to add variable in these files e.g\`: export SEASON="Summer"
