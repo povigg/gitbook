@@ -95,10 +95,56 @@ vagrant pts/0 2023-03-30 09:37 (10.0.2.2)
 ### Exporting Variables
 
 * Exporting variable will make it available for all shells
-* export _VARIABLE_ (this will be gone after logout from shell)
+* **export** _VARIABLE_ (this will be gone after logout from shell)
 
 To make variable permament:
 
 * **For user**: edit .bashrc file under user home direcoty
 * **For** **everyone**: edit file **/etc/profile**
 * to add variable in these files e.g\`: export SEASON="Summer"
+
+### User Input
+
+* Takes input from the user while executing script, storing it into variable and then uses it to execute script: **read** _variable1_
+* read -p (print) - for prompt
+* read -sp (suppress input) - user whill not be able to see and input
+
+```
+#!/bin/bash
+
+echo "Enter your skills"
+read SKILL
+
+echo "Your $SKILL skill is in high demand"
+
+read -p 'Username:' USR
+read -sp 'Password:' pass
+
+echo
+
+echo "Welcome $USR"
+```
+
+### If statement
+
+```
+#!/bin/bash
+
+read -p "Enter a number: " NUM
+echo
+
+# -gt (greater than)
+if [ $NUM -gt 100 ]
+then
+    echo "your numer is $NUM"
+    sleep 2
+    echo "Your number is greater than 100"
+    echo
+    date
+fi
+
+echo 'Script execution completed'
+```
+
+* **if** to start statement, **fi** to close
+*
