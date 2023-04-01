@@ -99,6 +99,6 @@ vagrant pts/0 2023-03-30 09:37 (10.0.2.2)
 
 To make variable permament:
 
-* For user: edit .bashrc file under user home direcoty
-* For everyone: edit file /etc/profile
+* **For user**: edit .bashrc file under user home direcoty
+* **For** **everyone**: edit file **/etc/profile**
 * to add variable in these files e.g\`: export SEASON="Summer"
