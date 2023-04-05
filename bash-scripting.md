@@ -148,3 +148,26 @@ echo 'Script execution completed'
 
 * **if** to start statement, **fi** to close
 *
+
+### While
+
+* Run for condition. As long as condition is **True**, it will run&#x20;
+
+<pre><code><strong>#!/bin/bash
+</strong>
+#script runs while counter value is less than 5
+#each time it's incremented by 1
+
+counter=0
+
+while [ $counter -lt 5 ]
+do
+ echo "Looping.."
+ echo "Value of counter is $counter"
+#incrementing by 1:
+ counter=$(( $counter+1 ))
+ sleep 1
+done
+
+echo "Out of the loop"
+</code></pre>
