@@ -1,6 +1,6 @@
 # Vagrant
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Vagrant images: [https://app.vagrantup.com/boxes/search](https://app.vagrantup.com/boxes/search)
 
@@ -36,7 +36,7 @@ Sync directories: first location is on your local device, second on linux device
 
 * install services such as httpd, wget, unzip
 * /etc/httpd/conf/httpd.conf - apache config file. Usefull information there
-* /var/www/html/index.html - file to replace  default httpd website
+* /var/www/html/index.html - file to replace default httpd website
 * download website template and unzip it ([https://www.tooplate.com](https://www.tooplate.com) for templates)
 * copy all od the content to replace default html: cp -r \* /var/www/html/
 * systemctl restart httpd
@@ -89,8 +89,6 @@ config.vm.provision "shell", inline: <<-SHELL
     sudo -u www-data sed -i 's/password_here/dbpass/' /srv/www/wordpress/wp-config.php
    SHELL
 ```
-
-
 
 ### Vagrant Multi VM:
 
