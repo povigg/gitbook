@@ -71,7 +71,7 @@ AWS
 * **double quotes** (**`"`**) preserve the literal value of all characters except for (**`$`**), (**`` ` ``**), (**`"`**), (**`\`**), and the (**`!`**)
 * when using double quotes use \ to remove the speacial meaning of the next character (preserve it)
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Command substitution
 

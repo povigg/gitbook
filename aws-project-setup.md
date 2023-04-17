@@ -4,9 +4,9 @@ description: Will setup vprofile test project using AWS infrastructure
 
 # AWS Project setup
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-### Project plan:
+### Project plan
 
 1. Create key pairs for SSH to EC2 instances
 2.  Create security groups for Load balancer, Tomcat Instances and backend services.
@@ -21,7 +21,7 @@ description: Will setup vprofile test project using AWS infrastructure
 9. Map ELB endpoint to website name in Godaddy DNS
 10. Verify
 
-### Security groups:
+### Security groups
 
 First SG will be for load balancer. We should be able to access LB using HTTP and HTTPS ports from anywhere. (HTTP will be removed after full project setup)
 
@@ -29,8 +29,19 @@ Application SG: Tomcat service will bne using port 8080, so we need to give and 
 
 Last SG is for Backend services. MYSQL using port 3306, memcached port 11211, rabbit mq port 5672. Allow **application SG as a source only.** Add extra rule within SG for **All traffic from Itself**. (Backend services need to communicate in between)
 
-### EC2 Instances:
+### EC2 Instances
 
-* EC2 instance for DB. Will be ryun ning centos7, using backend SG, use created keypair and add user data (bash script)
+#### Backend instances:
+
+* **EC2 instance for DB**. Will be ryun ning centos7, using backend SG, use created keypair and add user data (bash script)
 * Add SSH inbound rule from my IP to backend SG
+* **EC2 Instance for Memcache**. Centos7, backend SG, use created keypair, add user data
+* E**C2 instance for Rabbit MQ**, centos7, backend SG, use created keypair, add user data
+
+### Route53
+
+* Create backen zone (private) for backend servers and mapp IP addresses
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 *
