@@ -23,3 +23,31 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 sudo apt-get update
 sudo apt-get install jenkins -y
 ```
+
+To Install additional tools on Jenkins:
+
+<figure><img src=".gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+e.g. install jdk8:
+
+* Download jdk8 on linux machine. To see installed versions:  ll /usr/lib/jvm
+* Provide jdk8 path in Jenkins:
+
+<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+* It's recommended to save .war files or any other if needed, e.g.
+
+<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+### Versioning
+
+It's possible to create versioning in jenkins, e.g. lets version .war file, using shll cmd with envirenment variable (BUILD\_ID) to vreate new version file everytime built is run:
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+```
+mkdir -p versions
+cp target/vprofile-v2.war versions/vprofile-V$BUILD_ID.war
+```
+
+<figure><img src=".gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>

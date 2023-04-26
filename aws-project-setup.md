@@ -62,7 +62,7 @@ Go to app01 EC2 and modify IAM role:
 
 Delete default Tomcat app and upload the one from S3:
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Elastic Load Balancer
 
@@ -74,4 +74,4 @@ Delete default Tomcat app and upload the one from S3:
 
 * Add ELB DNS reccord in godaddy to point ot our domain URL (vprofileapp.povi.cc):
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
