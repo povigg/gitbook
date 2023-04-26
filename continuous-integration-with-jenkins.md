@@ -9,7 +9,7 @@ Installing Jenkins on Linux:
 Jenkins need java installed
 
 ```
-#!bin/bash
+#!/bin/bash
 
 sudo apt update
 sudo apt install openjdk-11-jre -y
