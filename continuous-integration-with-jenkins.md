@@ -37,7 +37,7 @@ e.g. install jdk8:
 
 * It's recommended to save .war files or any other if needed, e.g.
 
-<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Versioning
 

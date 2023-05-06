@@ -2,9 +2,33 @@
 
 Ansible documentation: [https://docs.ansible.com/](https://docs.ansible.com/)
 
+* Ansible is agentless. Control machine (which has Ansible installed) only need SSH access to target servers
+* Ansible is using **Modules**. **Small programs that do actual work**. They get sent from the control machine to the target server, **do 'they work' and get removed**
+* Modules are **granual**. One module is for one specific task
+* Ansible uses YAML
 
+### Ansible Playbooks
 
-### Createing first ansible inventory file
+* Playbooks are written in YAML format and **define a series** (**modules**) of tasks that need to be executed **in a specific order**
+* Playbook contains one or more plays
+* Playbook describes:
+  * **how** and in **which** order
+  * at what **time** and **where** (on which machines)
+  * **what** (the modules) should be executed
+
+<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption><p>Playbook example</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption><p>One 'Play'</p></figcaption></figure>
+
+### Ansible Inventory List
+
+* File that keeps **list** of Inventory. All **machines** that are **involved** in task **executions**
+* Entries in the file can be **defined** as **IP address** or **Hostname**
+* You can **group** multiple entries and refference the group
+
+<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption><p>Inventory list</p></figcaption></figure>
+
+### Creating first ansible inventory file
 
 Inventory file - text file with a list of hosts that Ansible will use to execute tasks
 
