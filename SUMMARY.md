@@ -6,3 +6,4 @@
 * [Bash Scripting](bash-scripting.md)
 * [AWS Project setup](aws-project-setup.md)
 * [Continuous integration with Jenkins](continuous-integration-with-jenkins.md)
+* [Ansible](ansible.md)

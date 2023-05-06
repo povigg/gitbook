@@ -62,7 +62,7 @@ Go to app01 EC2 and modify IAM role:
 
 Delete default Tomcat app and upload the one from S3:
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Elastic Load Balancer
 

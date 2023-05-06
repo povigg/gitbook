@@ -43,7 +43,7 @@ Sync directories: first location is on your local device, second on linux device
 
 or the same using vagrant file:
 
-<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Wordpress install Ubuntu
 
