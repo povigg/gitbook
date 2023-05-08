@@ -66,3 +66,13 @@ e.g. we are in 'task1' folder where we have ansible inventory file and webkey.pe
 <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+### Ad Hoc
+
+cmd tool to automate a single task.
+
+e.g. to copy file from ansible server to webserver:
+
+```
+/ansible_project/task2$ ansible -i inventory -m copy -a "src=index.html dest=/var/www/html/index.html" web01 --become
+```
