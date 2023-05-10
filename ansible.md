@@ -133,3 +133,9 @@ Variables priority:
 <figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption><p>variables</p></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption><p>output</p></figcaption></figure>
+
+### Fact variables
+
+{% embed url="https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_vars_facts.html" %}
+
+Used to retrieve system info about remote hosts
