@@ -40,7 +40,7 @@ Last SG is for Backend services. MYSQL using port 3306, memcached port 11211, ra
 
 * Create backen zone (private) for backend servers and mapp IP addresses
 
-<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Build and deploy artifacts
 
@@ -62,7 +62,7 @@ Go to app01 EC2 and modify IAM role:
 
 Delete default Tomcat app and upload the one from S3:
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Elastic Load Balancer
 

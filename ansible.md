@@ -16,7 +16,7 @@ Ansible documentation: [https://docs.ansible.com/](https://docs.ansible.com/)
   * at what **time** and **where** (on which machines)
   * **what** (the modules) should be executed
 
-<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption><p>Playbook example</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10) (1).png" alt=""><figcaption><p>Playbook example</p></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption><p>One 'Play'</p></figcaption></figure>
 
@@ -65,7 +65,7 @@ e.g. we are in 'task1' folder where we have ansible inventory file and webkey.pe
 
 <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Ad Hoc
 
@@ -76,3 +76,60 @@ e.g. to copy file from ansible server to webserver:
 ```
 /ansible_project/task2$ ansible -i inventory -m copy -a "src=index.html dest=/var/www/html/index.html" web01 --become
 ```
+
+### Variables
+
+Variables priority:
+
+> 1. command line values (for example, `-u my_user`, these are not variables)
+> 2. role defaults (defined in role/defaults/main.yml) [1](https://docs.ansible.com/ansible/latest/playbook\_guide/playbooks\_variables.html#id14)
+> 3. inventory file or script group vars [2](https://docs.ansible.com/ansible/latest/playbook\_guide/playbooks\_variables.html#id15)
+> 4. inventory group\_vars/all [3](https://docs.ansible.com/ansible/latest/playbook\_guide/playbooks\_variables.html#id16)
+> 5. playbook group\_vars/all [3](https://docs.ansible.com/ansible/latest/playbook\_guide/playbooks\_variables.html#id16)
+> 6. inventory group\_vars/\* [3](https://docs.ansible.com/ansible/latest/playbook\_guide/playbooks\_variables.html#id16)
+> 7. playbook group\_vars/\* [3](https://docs.ansible.com/ansible/latest/playbook\_guide/playbooks\_variables.html#id16)
+> 8. inventory file or script host vars [2](https://docs.ansible.com/ansible/latest/playbook\_guide/playbooks\_variables.html#id15)
+> 9. inventory host\_vars/\* [3](https://docs.ansible.com/ansible/latest/playbook\_guide/playbooks\_variables.html#id16)
+> 10. playbook host\_vars/\* [3](https://docs.ansible.com/ansible/latest/playbook\_guide/playbooks\_variables.html#id16)
+> 11. host facts / cached set\_facts [4](https://docs.ansible.com/ansible/latest/playbook\_guide/playbooks\_variables.html#id17)
+> 12. play vars
+> 13. play vars\_prompt
+> 14. play vars\_files
+> 15. role vars (defined in role/vars/main.yml)
+> 16. block vars (only for tasks in block)
+> 17. task vars (only for the task)
+> 18. include\_vars
+> 19. set\_facts / registered vars
+> 20. role (and include\_role) params
+> 21. include params
+> 22. extra vars (for example, `-e "user=my_user"`)(always win precedence)
+
+* Variables in inventory file
+
+```
+---
+- name: Setup Webserver
+  hosts: websrvgrp
+  become: yes
+  vars:
+    dbname: PovDB
+    dbuser: povilas
+    dbpass: povilas
+  tasks:
+# debug options:  
+    - debug:
+        var: dbname
+
+    - debug:
+        msg: "Value of dbuser is {{dbuser}}"
+```
+
+* Variables within the project in the group\_vars/all file
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+* Groups in the inventory file have their variables defined in group\_vars folder:
+
+<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption><p>variables</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption><p>output</p></figcaption></figure>
