@@ -155,3 +155,7 @@ Community Roles: [https://galaxy.ansible.com/](https://galaxy.ansible.com/)
 
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+### Cloud modules
+
+[https://docs.ansible.com/ansible/2.9/modules/list\_of\_cloud\_modules.html](https://docs.ansible.com/ansible/2.9/modules/list\_of\_cloud\_modules.html)
