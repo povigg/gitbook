@@ -139,3 +139,19 @@ Variables priority:
 {% embed url="https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_vars_facts.html" %}
 
 Used to retrieve system info about remote hosts
+
+### Handlers
+
+Used to run a task only when there is a change made
+
+{% embed url="https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_handlers.html#handlers" %}
+
+### Roles
+
+Roles let you automatically load related vars, files, tasks, handlers, and other Ansible artifacts based on a known file structure. After you group your content in roles, you can **easily reuse** them and **share** them **with other users**.
+
+Community Roles: [https://galaxy.ansible.com/](https://galaxy.ansible.com/)
+
+
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>

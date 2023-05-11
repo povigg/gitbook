@@ -58,7 +58,7 @@ To be able to download this artifact to Tomcat instance we need to create a Rule
 
 Go to app01 EC2 and modify IAM role:
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 Delete default Tomcat app and upload the one from S3:
 
