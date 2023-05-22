@@ -33,7 +33,7 @@ e.g. install jdk8:
 * Download jdk8 on linux machine. To see installed versions:  ll /usr/lib/jvm
 * Provide jdk8 path in Jenkins:
 
-<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 * It's recommended to save .war files or any other if needed, e.g.
 

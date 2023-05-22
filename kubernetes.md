@@ -6,6 +6,10 @@ description: >-
 
 # Kubernetes
 
+### Documentation
+
+[https://kubernetes.io/docs/home/](https://kubernetes.io/docs/home/)
+
 ### Features
 
 * High availability or no downtime
@@ -15,6 +19,8 @@ description: >-
 
 
 ### K8s components
+
+<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 Pod
 
@@ -27,8 +33,16 @@ Service
 
 * Permanent IP
 * Lifecycle of Pod and Service is NOT connected
+* Load-balancer
 
 Ingress
 
 * An API object that manages external access to the services in a cluster, typically HTTP
-*
+
+### Deployment
+
+* Used for **stateLESS** Apps
+
+### StatefulSet
+
+* Used for **stateFUL** Apps or DBs
