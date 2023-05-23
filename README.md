@@ -12,7 +12,7 @@ CI involves several key steps, including:
 
 CI enables teams to catch **errors and conflicts early**, **reducing the risk of costly mistakes** and delays. It also helps teams to work collaboratively and efficiently.
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Continious Delivery** - DevOps practice that involves continuously delivering software changes to production by automating the entire release process.
 

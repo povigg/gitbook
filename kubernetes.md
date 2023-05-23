@@ -46,3 +46,7 @@ Ingress
 ### StatefulSet
 
 * Used for **stateFUL** Apps or DBs
+
+### K8s Architecture
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>

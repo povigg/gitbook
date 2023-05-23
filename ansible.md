@@ -63,7 +63,7 @@ ansible_ssh_private_key_file=webkey.pem
 
 e.g. we are in 'task1' folder where we have ansible inventory file and webkey.pem that we are using **as variable**. we are runnin ansible cmd to ping all hosts within inventory file. Use **-i inventory** to tell to use this file **instead of default** ansible inv file
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -154,7 +154,7 @@ Community Roles: [https://galaxy.ansible.com/](https://galaxy.ansible.com/)
 
 
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Cloud modules
 
