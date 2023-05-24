@@ -1,6 +1,6 @@
 # Vagrant
 
-<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Vagrant images: [https://app.vagrantup.com/boxes/search](https://app.vagrantup.com/boxes/search)
 

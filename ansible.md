@@ -18,7 +18,7 @@ Ansible documentation: [https://docs.ansible.com/](https://docs.ansible.com/)
 
 <figure><img src=".gitbook/assets/image (10) (1).png" alt=""><figcaption><p>Playbook example</p></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption><p>One 'Play'</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (2).png" alt=""><figcaption><p>One 'Play'</p></figcaption></figure>
 
 ### Ansible Inventory List
 
@@ -65,7 +65,7 @@ e.g. we are in 'task1' folder where we have ansible inventory file and webkey.pe
 
 <figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Ad Hoc
 
@@ -126,7 +126,7 @@ Variables priority:
 
 * Variables within the project in the group\_vars/all file
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Groups in the inventory file have their variables defined in group\_vars folder:
 

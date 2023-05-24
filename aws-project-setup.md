@@ -50,11 +50,11 @@ Go to project .xml file and run it using maven:
 
 Now create S3 bucket and upload .war file (artifact) to the bucket
 
-<figure><img src=".gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 To be able to download this artifact to Tomcat instance we need to create a Rule for EC2 service to access S3
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 Go to app01 EC2 and modify IAM role:
 

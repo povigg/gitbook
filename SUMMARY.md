@@ -8,3 +8,4 @@
 * [Continuous integration with Jenkins](continuous-integration-with-jenkins.md)
 * [Ansible](ansible.md)
 * [Kubernetes](kubernetes.md)
+* [K8s mongo-express and mongoDB project](k8s-mongo-express-and-mongodb-project.md)
