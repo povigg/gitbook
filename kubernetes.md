@@ -50,3 +50,15 @@ Ingress
 ### K8s Architecture
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+### Namespace
+
+Provides a mechanism for isolating groups of resources within a single cluste
+
+* **default**: used to create resources if new name space is not created
+* **kube-node-lease**: contains heartbeats of nodes, each node has associated lease object
+* **kube-public:** publicely accessible data, contains cluster info
+* **kube-system**: objects/processes created by K8s. Not for use!
+
+Persistent volume and node **cannot** be created within namespace
+
