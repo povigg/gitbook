@@ -62,3 +62,11 @@ Provides a mechanism for isolating groups of resources within a single cluste
 
 Persistent volume and node **cannot** be created within namespace
 
+### Ingress
+
+* API object in Kubernetes that provides a way to manage external access to services within a cluster
+* acts as a **gateway or entry point** for external traffic to reach the services running inside the cluster
+* exposes **HTTP** and **HTTPS** routes from outside the cluster to services within the cluster
+
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+

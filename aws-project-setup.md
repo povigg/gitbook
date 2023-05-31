@@ -70,7 +70,7 @@ Delete default Tomcat app and upload the one from S3:
 
 <figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Add ELB DNS reccord in godaddy to point ot our domain URL (vprofileapp.povi.cc):
 
