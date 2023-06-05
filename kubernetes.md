@@ -62,6 +62,13 @@ Provides a mechanism for isolating groups of resources within a single cluste
 
 Persistent volume and node **cannot** be created within namespace
 
+#### Namespace usage:
+
+* **Structure** your components
+* **Avoid conflicts** between teams
+* **Share services** between environments
+* **Access and resource limits** on Namespace level
+
 ### Ingress
 
 * API object in Kubernetes that provides a way to manage external access to services within a cluster
